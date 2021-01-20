@@ -1,1 +1,10 @@
 <h2>로그인</h2>
+<div>
+    유효성 체크 : {{ err }}
+</div>
+<form method ="post" action="/login">
+    {% csrf_token %}
+    id : <input type="text" name="username" />
+    email : <input type="email" name="useremail" />
+    <input type="submit">
+</form>
