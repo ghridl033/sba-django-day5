@@ -56,6 +56,8 @@ def login(req):
 
         return HttpResponse(f"<h1>{member.useremail}</h1>")
 
+    return redirect('/')
+
 def index(request):
     return HttpResponse("<h1>version 1: dynamic page</h1>")
 
